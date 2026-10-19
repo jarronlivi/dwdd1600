@@ -1,0 +1,165 @@
+body {
+    background-color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+
+/* header stuff here */
+header {
+    background-color: #f2f2f2;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #1f3655;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* nav stuff here */
+nav {
+    background-color: #b0d1a1;
+
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0 10px;
+    display: flex;
+
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #1f3655;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #283f6b;
+    color: #b0d1a1;
+}
+
+nav li a:hover {
+    background-color: #1f3655;
+    color: #63729b;
+}
+
+/* main content stuff here */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #5a674d;
+}
+
+main h2 {
+
+    color: #afaf6f;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #313131;
+}
+main ol {
+
+    padding-left: 2rem;
+    color: #313131;
+}
+main dl dt {
+    font-weight: 700;
+    color: #1f3655;
+    margin-top: 1rem;
+}  
+main dl dd {
+    margin-left: 1rem;
+    color: #283f6b;
+}
+main ul {
+    list-style-type: circle;
+    margin-bottom: .5rem;  
+    font-size: .9rem;
+}
+main strong {
+    color: rgb(7, 7, 7);
+    font-weight: 700;
+}
+main em {
+    font-weight: 300;
+}
+
+main address {
+    font-style: normal;
+    background-color: #b0d1a1;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #5a674d;
+    width: 200px;
+}
+
+main a {
+    color: #283f68;
+}
+main a:hover {
+    color: #63729b;
+}
+
+figure.align-right {
+    float: right;
+    margin: 0 0 15px 15px;
+    width: 40%
+}
+
+figure.align-right img {
+    width: 100%;
+    height: auto;
+}
+
+figure.align-right figcaption {
+    font-size: .8rem;
+    color: #5a674d;
+    text-align: center;
+    margin-top: .2rem;
+}
+
+figure  {
+    margin: 0;
+    padding: 10px;
+}
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    font-size: .8rem;
+    color: #5a674d;
+    text-align: center;
+    margin-top: .2rem;
+}
+
+
+
+
+/* footer stuff here */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+    color: #5a674d;
+    letter-spacing: 2px;
+}

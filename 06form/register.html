@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jarron Livingston">
+    <meta name="description" content="Sign up to join a soccer league in Utah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="discovery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Join a League</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>Work Hard, Play Harder</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li ><a href="index.html">Discover Soccer UT</a></li>
+            <li ><a href="adults.html">Adults</a></li>
+            <li ><a href="images.html">See For Yourself</a></li>
+            <li class="active"><a href="register.html">Join a League</a></li>
+        </ul>
+    </nav>
+
+    <!--start the page main-->
+    <main>
+        <h1>Join a League</h1>
+        <p>Ready to get back on the pitch? Tell us a little about yourself and we will match you with a league,
+            a team, or a pickup game near you. Fields marked with * are required.
+        </p>
+
+        <form method="get" class="regform" action="thanks.html">
+            <fieldset>
+                <legend>Player Information</legend>
+                <label>Full Name *
+                    <input type="text" name="playerName" autocomplete="name" required>
+                </label>
+                <label>Email Address *
+                    <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </label>
+                <label>Cell Phone *
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="801-555-1234" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Playing Experience</legend>
+                <span class="group-title">Skill Level *</span>
+                <label class="choice"><input type="radio" name="level" value="recreational" required> Recreational: just for fun</label>
+                <label class="choice"><input type="radio" name="level" value="intermediate" required> Intermediate: I have played before</label>
+                <label class="choice"><input type="radio" name="level" value="competitive" required> Competitive: I want serious matches</label>
+                <label>Preferred League Format
+                    <select name="format">
+                        <option value="none">Please select</option>
+                        <option value="11-a-side">11-a-side (full field)</option>
+                        <option value="7-a-side">7-a-side (small field)</option>
+                        <option value="futsal">Indoor futsal</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Availability</legend>
+                <span class="group-title">When can you play? Choose all that apply.</span>
+                <label class="choice"><input type="checkbox" name="weekdayEvenings" value="yes"> Weekday evenings</label>
+                <label class="choice"><input type="checkbox" name="saturdayMornings" value="yes"> Saturday mornings</label>
+                <label class="choice"><input type="checkbox" name="saturdayAfternoons" value="yes"> Saturday afternoons</label>
+                <label class="choice"><input type="checkbox" name="sundays" value="yes"> Sundays</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Anything Else?</legend>
+                <label>Tell us about your soccer background or goals
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Find My League">
+        </form>
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Discover Soccer UT</p>
+    </footer>
+
+</body>
+
+</html>
